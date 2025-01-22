@@ -11,5 +11,4 @@ function toggleTheme() {
     // Change button text based on the current mode
     const currentMode = body.classList.contains('dark-mode') ? 'Dark Mode' : 'Light Mode';
     themeSwitch.textContent = currentMode;
-  }
-  
+}

@@ -1,43 +1,76 @@
 body {
     transition: background-color 0.5s ease;
-  }
-  
-  header {
-    background-color: #3498db; Header background color in light mode
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #3498db; /* Header background color in light mode */
     color: #fff; /* Header text color in light mode */
     padding: 20px;
     text-align: center;
-  }
-  
-  .content {
+}
+
+.content {
     padding: 20px;
-  }
-  
-  /* Custom Button Styles */
-  .theme-switch-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Custom Button Styles */
+.theme-switch-container {
     position: fixed;
     top: 20px;
     right: 20px;
     cursor: pointer;
-  }
-  
-  /* Light Mode Styles */
-  body.light-mode {
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Light Mode Styles */
+body.light-mode {
     background-color: #fff; /* Body background color in light mode */
     color: #333; /* Body text color in light mode */
-  }
-  
-  .theme-switch-container.light-mode {
+}
+
+.theme-switch-container.light-mode {
     background-color: #3498db; /* Button container background color in light mode */
-  }
-  
-  /* Dark Mode Styles */
-  body.dark-mode {
+    color: #fff;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
     background-color: #333; /* Body background color in dark mode */
     color: #fff; /* Body text color in dark mode */
-  }
-  
-  .theme-switch-container.dark-mode {
+}
+
+.theme-switch-container.dark-mode {
     background-color: #555; /* Button container background color in dark mode */
-  }
-  
+    color: #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    header {
+        padding: 15px;
+    }
+
+    .content {
+        padding: 15px;
+    }
+
+    .theme-switch-container {
+        top: 10px;
+        right: 10px;
+        padding: 8px 16px;
+    }
+}
